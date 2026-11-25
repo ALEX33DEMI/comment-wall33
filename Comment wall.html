@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comment Wall</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style - My very good life - Copy.css" />
+ </head>
+  <body class="bg-slate-50 text-slate-800">
+  <header>
+     <header class="bg-teal-800 text-white">
+ <div class="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row gap-2">
+    <div class="flex items-center gap-3">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Logo" class="w-10 h-10" />
+        <h1 class="text-xl font-bold">Comment Wall</h1>
+    </div>
+   <div class="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center sm:justify-between gap-2">
+    <div class="flex items-center gap-3">
+    </div>
+     <nav>
+          <ul class="flex flex-wrap gap-4">
+             <div class="grid gap-6 md:grid-cols-3">
+             <a href="#comments" class="hover:text-teal-200 focus-visible:text-teal-200">Comments</a>
+             <a href="#post" class="hover:text-teal-200 focus-visible:text-teal-200">Post a comment</a>
+         </ul>
+ </nav>
+  </div>
+  </header>
+<main class="max-w-5xl mx-auto px-4 py-8">
+ <div id="error" class="hidden bg-red-100 text-red-700 border border-red-300 rounded-lg px-4 py-2 mb-6"></div>
+ <div class="grid md:grid-cols-3">
+ <section id="comments" class="md:col-span-2 flex flex-col gap-4">
+ </section>
+ <section id="post" class="bg-white rounded-xl shadow p-4 flex flex-col gap-3 self-start">
+   <h2>Write your comment here</h2>
+      <form id="commentForm" class="flex flex-col gap-3" novalidate>
+          <form id="commentForm" class="flex flex-col gap-3" novalidate>
+ <div class="flex flex-col gap-1">
+ <label for="titleInput" class="text-sm font-semibold">Write your name</label>
+ <input id="titleInput" type="text" class="border border-slate-300 rounded-lg px-3 py-2" />
+ </div>
+  <div class="flex flex-col gap-1">
+   <label for="textColorSelect" class="text-sm font-semibold">Text Color</label>
+   <select id="textColorSelect" class="border border-slate-300 rounded-lg px-3 py-2">
+     <option value="">Choose a text color...</option>
+     <option value="text-slate-800">Slate</option>
+     <option value="text-red-600">Red</option>
+     <option value="text-blue-600">Blue</option>
+     <option value="text-green-600">Green</option>
+     <option value="text-purple-600">Purple</option>
+   </select>
+ </div>
+ <div class="flex flex-col gap-1">
+   <label for="bgColorSelect" class="text-sm font-semibold">Background Color</label>
+   <select id="bgColorSelect" class="border border-slate-300 rounded-lg px-3 py-2">
+     <option value="">Choose a background color...</option>
+     <option value="bg-white">White</option>
+     <option value="bg-yellow-100">Yellow</option>
+     <option value="bg-blue-100">Blue</option>
+     <option value="bg-pink-100">Pink</option>
+     <option value="bg-green-100">Green</option>
+   </select>
+ </div>
+  <fieldset class="flex flex-col gap-1">
+   <legend class="text-sm font-semibold">Icon</legend>
+   <div class="flex flex-wrap gap-4">
+       <span class="flex items-center gap-1">
+     <input type="radio" id="iconEarth" name="icon" value="🌍" checked />
+     <label for="iconEarth">EARTH</label>
+   </span>
+      <span class="flex items-center gap-1">
+     <input type="radio" id="iconFire" name="icon" value="🔥" />
+     <label for="iconFire">FIRE</label>
+   </span>
+      <span class="flex items-center gap-1">
+     <input type="radio" id="iconHeart" name="icon" value="❤️" />
+     <label for="iconHeart">HEART</label>
+   </span>
+      <span class="flex items-center gap-1">
+     <input type="radio" id="iconStar" name="icon" value="⭐" />
+     <label for="iconStar">STAR</label>
+   </span>
+      <span class="flex items-center gap-1">
+     <input type="radio" id="iconHappy" name="icon" value="😃" />
+     <label for="iconHappy">HAPPY</label>
+    </span>
+      <span class="flex items-center gap-1">
+     <input type="radio" id="iconSun" name="icon" value="🌅" />
+     <label for="iconSun">SUNSET</label>
+   </span>
+         <span class="flex items-center gap-1">
+     <input type="radio" id="iconRobot" name="icon" value="🤖" />
+     <label for="iconRobot">ROBOT</label>
+   </span>
+         <span class="flex items-center gap-1">
+     <input type="radio" id="iconDog" name="icon" value="🐶" />
+     <label for="iconDog">DOG</label>
+   </span>
+ </div>
+ </fieldset>
+  <div class="flex flex-col gap-1">
+       <label for="messageInput" class="text-sm font-semibold">Comment a message</label>
+   <textarea id="messageInput" rows="4" class="border border-slate-300 rounded-lg px-3 py-2"></textarea>
+ </div>
+  <button type="submit" id="postBtn" class="bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-lg py-2">Post Comment</button>
+   </form>
+ </section>
+  </div>
+</main>
+<footer class="text-center text-sm text-slate-500 py-6">Built by Alexandr Demidov. Thank you for your comments and using this website!</footer>
+  <script src="script.js"></script>
+  </body>
+ </html>
